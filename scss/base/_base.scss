@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(/fonts/Raleway-Regular.woff),
+    url(/fonts/Raleway-Regular.woff2);
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(/fonts/Raleway-Medium.woff),
+    url(/fonts/Raleway-Medium.woff2);
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(/fonts/Raleway-SemiBold.woff),
+    url(/fonts/Raleway-SemiBold.woff2);
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(/fonts/Raleway-Bold.woff),
+    url(/fonts/Raleway-Bold.woff2);
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Comfortaa";
+    src: url(/fonts/Comfortaa-Medium.woff),
+    url(/fonts/Comfortaa-Medium.woff2);
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Comfortaa";
+    src: url(/fonts/Comfortaa-Bold.woff),
+    url(/fonts/Comfortaa-Bold.woff2);
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Belleza";
+    src: url(/fonts/Belleza-Regular.woff),
+    url(/fonts/Belleza-Regular.woff2);
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Denistina";
+    src: url(/fonts/Denistina_en.woff),
+    url(/fonts/Denistina_en.woff2);
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url(/fonts/Inter-Regular.woff),
+    url(/fonts/Inter-Regular.woff2);
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url(/fonts/Inter-Bold.woff),
+    url(/fonts/Inter-Bold.woff2);
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    ::-webkit-scrollbar {
+        background-color: #E5E5E5;
+        width: 10px;
+        border-radius: 10px;
+        
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #adacac;
+        border-radius: 10px;
+        
+    }
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+
+.main {
+    flex-grow: 1;
+}
+
+body {
+    font-family: $font-main;
+    background-color: $white;
+    color: $dark;
+    font-size: 16px;
+    @media screen and (max-width: 1280px) {
+        font-size: 15px;
+    }
+    @media screen and (max-width: 744px) {
+        font-size: 14px;
+    } 
+    
+}
+a {
+    color: $fontwhite;
+    &:hover {
+        opacity: 0.7;
+        transition: 0.2s ease-in;
+    }
+}
+.container {
+    max-width: 1920px;
+    padding-left: 390px;
+    padding-right: 390px;
+    margin: 0 auto;
+   @media screen and (max-width: 1850px) {
+    max-width: 1850px;
+    padding-left: 300px;
+    padding-right: 300px;
+   }
+   @media screen and (max-width: 1650px) {
+    max-width: 1650px;
+    padding-left: 190px;
+    padding-right: 190px;
+   }
+
+   @media screen and (max-width: 1440px) {
+    max-width: 1440px;
+    padding-left: 140px;
+    padding-right: 140px;
+   }
+   @media screen and (max-width: 1366px) {
+    max-width: 1366px;
+    padding-left: 100px;
+    padding-right: 100px;
+   }
+   @media screen and (max-width: 1280px) {
+    max-width: 1280px;
+    padding-left: 55px;
+    padding-right: 55px;
+   }
+   @media screen and (max-width: 1024px){
+    max-width: 1024px;
+    padding-left: 110px;
+    padding-right: 110px;
+   }
+   @media screen and (max-width: 920px){
+    max-width: 920px;
+    padding-left: 55px;
+    padding-right: 55px;
+   }
+   @media screen and (max-width: 820px){
+    max-width: 820px;
+    padding-left: 30px;
+    padding-right: 30px;
+   } 
+   @media screen and (max-width: 744px) {
+    max-width: 744px;
+    padding-left: 50px;
+    padding-right: 50px;
+   }
+   @media screen and (max-width: 620px) {
+    max-width: 620px;
+    padding-left: 25px;
+    padding-right: 25px;
+   }
+   @media screen and (max-width: 530px) {
+    max-width: 530px;
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+}
