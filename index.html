@@ -32,7 +32,7 @@
             <section class="title">
                 <nav class="title__menu">
                     <ul class="title__list">
-                        <li><a href="#">Собрать букет</a></li>
+                        <li><a href="#" class="open-orderWindow">Собрать букет</a></li>
                         <li><a href="#">Наши работы</a></li>
                         <li><a href="#">Доставка и оплата</a></li>
                         <li><a href="#">FAQ</a></li>
@@ -56,7 +56,7 @@
                         <div class="subscription__content">
                             <h1>Подписка на её улыбку<span> и цветы</span></h1>
                             <div class="title__button">
-                                <button class="buttonAssembling">Собрать свой букет</button>
+                                <button class="buttonAssembling open-orderWindow">Собрать свой букет</button>
                                 <button class="buttonCalculation">Рассчитать стоимость</button>
                             </div>
                             <p>Подарите себе или близким три месяца свежих цветов с фермы. При необходимости легко настроить адрес и дату доставки для каждого месяца</p>
@@ -67,7 +67,7 @@
                     <p>Специальное предложение <span><a href="#">здесь</a></span></p>
                 </div>
                 <div class="order-window">
-                    <img src="./img/icons/x.svg" alt="">
+                    <img src="./img/icons/x.svg" alt="" id="close-orderWindow">
                     <h2 class="head-second">Сформируйте Ваш заказ</h2>
                     <form class="order-window__form" action="#">
                         <p>Ваше имя</p>
@@ -154,6 +154,20 @@
                         <label>
                             <input type="time">
                         </label>
+                        <p>Адрес доставки</p>
+                        <div class="order-window__place"><input type="text" placeholder="г. Санкт-Петербург, ул. Невский проспект, д. 4, кв. 120"></div>
+                        <p>Получатель</p>
+                        <div class="radio-box">
+                            <label><input type="radio" name="recipient" checked><span>Я - заказчик</span></label>
+                            <label><input type="radio" name="recipient"><span>Получатель - другой человек, но это сюрприз</span></label>
+                            <label><input type="radio" name="recipient"><span>Получатель - другой человек, но нужно позвонить</span></label>
+                        </div>
+                        <p>Имя и номер получателя</p>
+                        <input type="text" placeholder="Валерия +7 999 999 99 99">
+                        <div class="div-submit">
+                            <input type="submit" value="Отправить">
+                            После отправки заявки, с Вами свяжется наш специалист
+                        </div>
                     </form>
                 </div>
             </section>
@@ -244,7 +258,7 @@
                             <h2 class="head-second">Составь свой букет</h2>
                             <span>/Не нашли, что искали?</span>
                             <p>Если Вы не хотите оформлять подписку на доставку цветов, можно воспользоваться единоразовой доставкой, указав предпочтения по стоимости, виду цвета, цвету бутона</p>
-                            <button>Составить букет</button>
+                            <button class="open-orderWindow">Составить букет</button>
                         </div>
                     </div>
                 </div>
@@ -344,7 +358,7 @@
                                 <li><a href="#">Преимущества</a></li>
                                 <li><a href="#">Наши работы</a></li>
                                 <li><a href="#">Как работает подписка</a></li>
-                                <li><a href="#">Соберите свой букет</a></li>
+                                <li><a href="#" class="open-orderWindow">Соберите свой букет</a></li>
                                 <li><a href="#">Отзывы</a></li>
                                 <li><a href="#">Часто задаваемые вопросы</a></li>
                             </ul>
