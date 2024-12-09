@@ -445,7 +445,7 @@
         }
     
         input[type="date"]::-webkit-calendar-picker-indicator{
-            background-image: url(/img/icons/fluent_calendar-24-regular.svg);
+            background-image: url("/img/icons/fluent_calendar-24-regular.svg");
             width: 20px;
             height: 20px;
             position: absolute;
@@ -456,7 +456,7 @@
         }
     
         input[type="time"]::-webkit-calendar-picker-indicator{
-            background-image: url(/img/icons/clock.svg);
+            background-image: url("/img/icons/clock.svg");
             width: 20px;
             height: 20px;
             position: absolute;
