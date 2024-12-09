@@ -772,7 +772,7 @@ a:hover {
   position: absolute;
   left: -17px;
   top: 3px;
-  background-image: url("./img/icons/checkbox.svg");
+  background-image: url("../img/icons/checkbox.svg");
   width: 10px;
   height: 10px;
 }
@@ -813,7 +813,7 @@ a:hover {
   color: #2C3E50;
 }
 .order-window .order-window__form input[type=file] + span::before {
-  content: url("./img/icons/link.svg");
+  content: url("../img/icons/link.svg");
   position: absolute;
   left: 0px;
   width: 12.5px;
@@ -844,7 +844,7 @@ a:hover {
   padding: 16px 10px 16px 43px;
 }
 .order-window .order-window__form input[type=date]::-webkit-calendar-picker-indicator {
-  background-image: url("./img/icons/fluent_calendar-24-regular.svg");
+  background-image: url("../img/icons/fluent_calendar-24-regular.svg");
   width: 20px;
   height: 20px;
   position: absolute;
@@ -854,7 +854,7 @@ a:hover {
   padding: 16px 10px 16px 43px;
 }
 .order-window .order-window__form input[type=time]::-webkit-calendar-picker-indicator {
-  background-image: url("./img/icons/clock.svg");
+  background-image: url("../img/icons/clock.svg");
   width: 20px;
   height: 20px;
   position: absolute;
@@ -866,7 +866,7 @@ a:hover {
 .order-window .order-window__form .order-window__place::before {
   position: absolute;
   content: "";
-  background-image: url("./img/icons/map-pin.svg");
+  background-image: url("../img/icons/map-pin.svg");
   width: 20px;
   height: 20px;
   left: 8px;
@@ -917,7 +917,7 @@ a:hover {
   position: absolute;
   left: 0px;
   top: 3px;
-  background-image: url("./img/icons/checkbox.svg");
+  background-image: url("../img/icons/checkbox.svg");
   width: 10px;
   height: 10px;
 }
