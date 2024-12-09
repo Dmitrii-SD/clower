@@ -558,15 +558,6 @@
     
 }
 
-
-
-
-
-
-
-
-
-
 .gradient-title{
     display: none;
     @media screen and (max-width: 744px) {
@@ -793,13 +784,13 @@
 
 
 .instruction{
-    background-image: url(/img/bg/Фон.jpg);
+    background-image: url("../img/bg/Фон.jpg");
     @media screen and (max-width: 1024px){
-        background-image: url(/img/bg/Фон\ 1024.jpg);
+        background-image: url("../img/bg/Фон\ 1024.jpg");
         height: 376px;
     }
     @media screen and (max-width: 744px) {
-        background-image: url(/img/bg/Фон\ 744.jpg);
+        background-image: url("../img/bg/Фон\ 744.jpg");
         height: 662px;
     }
 }
