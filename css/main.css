@@ -772,7 +772,7 @@ a:hover {
   position: absolute;
   left: -17px;
   top: 3px;
-  background-image: url(/img/icons/checkbox.svg);
+  background-image: url("/img/icons/checkbox.svg");
   width: 10px;
   height: 10px;
 }
