@@ -36,6 +36,7 @@ function sliderImg () {
 sliderImg();
 
 function openOrder () {
+  const overlay = document.querySelector('.body-overlay')
   const openBtn = document.querySelectorAll('.open-orderWindow')
   const orderWindow = document.querySelector('.order-window')
   const closeBtn = document.querySelector('#close-orderWindow')
@@ -44,6 +45,8 @@ function openOrder () {
       orderWindow.style.display = "flex"
       if(orderWindow.style.display === "flex") {
         document.body.style.overflow = "hidden"
+        overlay.style.display = "block"
+        
       }
     })
   })
@@ -52,6 +55,7 @@ function openOrder () {
     orderWindow.style.display = "none"
     if(orderWindow.style.display === "none") {
       document.body.style.overflow = ""
+      overlay.style.display = "none"
     }
   })
 }
