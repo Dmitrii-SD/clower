@@ -1,4 +1,4 @@
-function sliderImg () {
+function sliderImg() {
   const imgArr = document.getElementsByClassName('slider__img');
   let imgWidth = document.querySelector('.slider__img').offsetWidth + 20;
   if(document.documentElement.clientWidth <= 744) {
@@ -35,7 +35,7 @@ function sliderImg () {
 }
 sliderImg();
 
-function openOrder () {
+function openOrder() {
   const overlay = document.querySelector('.body-overlay')
   const openBtn = document.querySelectorAll('.open-orderWindow')
   const orderWindow = document.querySelector('.order-window')
@@ -61,7 +61,7 @@ function openOrder () {
 }
 openOrder()
 
-function sliderReviews () {
+function sliderReviews() {
   const reviewsArr = document.getElementsByClassName('reviews__item');
   let gap = 20;
   if(document.documentElement.clientWidth <= 744) {
@@ -98,7 +98,7 @@ function sliderReviews () {
 sliderReviews();
 
 
-function helpQuestion () {
+function helpQuestion() {
   const downBtn1 = document.querySelector('#open-block1');
   const downBtn2 = document.querySelector('#open-block2');
   const downBtn3 = document.querySelector('#open-block3');
@@ -136,7 +136,7 @@ function helpQuestion () {
 }
 helpQuestion();
 
-function menuBurger () {
+function menuBurger() {
   const menu = document.querySelector('#menu-nav');
   const navBtn = document.querySelector('#nav-btn');
   const btnImg = document.querySelector('#nav-btnimg');

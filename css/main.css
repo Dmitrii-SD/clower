@@ -291,6 +291,16 @@ a:hover {
     padding-right: 15px;
   }
 }
+@media screen and (min-width: 2100px) {
+  .container {
+    max-width: 2100px;
+  }
+}
+@media screen and (min-width: 2400px) {
+  .container {
+    max-width: 2400px;
+  }
+}
 
 .header__inner {
   display: flex;
@@ -1350,6 +1360,10 @@ a:hover {
 
 .instruction {
   background-image: url("../img/bg/Фон.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+  height: 363px;
 }
 @media screen and (max-width: 1024px) {
   .instruction {
@@ -1361,6 +1375,11 @@ a:hover {
   .instruction {
     background-image: url("../img/bg/Фон 744.jpg");
     height: 662px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .instruction {
+    background-size: cover;
   }
 }
 
