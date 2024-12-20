@@ -190,9 +190,9 @@ a {
     padding-right: 15px;
    }
    @media screen and (min-width: 2100px){
-    max-width: 2100px;
+    min-width: 2100px;
    }
    @media screen and (min-width: 2400px){
-    max-width: 2400px;
+    min-width: 2400px;
    }
 }
