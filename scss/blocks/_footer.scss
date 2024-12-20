@@ -49,6 +49,10 @@
         @media screen and (max-width: 530px) {
             text-align: right;
         }
+        @media screen and (min-width: 2400px){
+            font-size: 24px;
+            width: 200px;
+        }
     }
     img{
         width: 31px;
@@ -104,6 +108,12 @@
         order: -1;
         flex-direction: column;
         gap: 20px;
+    }
+    @media screen and (min-width: 2400px){
+        width: 750px;
+    }
+    @media screen and (min-width: 2800px){
+        width: 1000px;
     }
     
 } 
@@ -180,6 +190,9 @@
         @media screen and (max-width: 744px) {
             font-size: 12px;
         }
+        @media screen and (min-width: 2400px){
+            font-size: 16px;
+        }
     }
     @media screen and (max-width: 744px) {
         position: absolute;
@@ -220,5 +233,8 @@
         flex-direction: column;
         gap: 10px;
         font-size: 10px;
+    }
+    @media screen and (min-width: 2400px){
+        font-size: 14px;
     }
 }
