@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветы</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" defer></script>
+    <script src="./js/order-window.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__contacts">
+                        <a href="#"><img src="./img/icons/tg.svg" alt=""></a>
+                        <img src="./img/icons/Line.svg" alt="">
+                        <a href="#"><img src="./img/icons/telephone.svg" alt=""></a>
+                    </div>
+                    <div class="header__logo"><img src="./img/icons/logo.svg" alt=""></div>
+                    <div class="header__lk">
+                        <a href="#">Личный кабинет</a>
+                        <a href="#"><img src="./img/icons/lk.svg" alt=""></a>
+                    </div>
+                    <div class="menu-burger" id="nav-btn"><a href="#"><img id="nav-btnimg" src="./img/icons/menu-burger.svg" alt=""></a></div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="title">
+                <nav class="title__menu">
+                    <ul class="title__list">
+                        <li><a href="#" class="open-orderWindow">Собрать букет</a></li>
+                        <li><a href="#">Наши работы</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="title__imgSubscr">
+                    <img class="title__img1"
+                    srcset="./img/pictures/womenflower430.jpg 430w,
+                    ./img/pictures/womenflower744.jpg 744w,
+                    ./img/pictures/womenflower.jpg"
+                    src="./img/pictures/womenflower.jpg"
+                    sizes="(max-width:430px) 228px,
+                    (max-width: 744px) 375px"
+                    alt="">
+                    <img class="title__img2" srcset="./img/pictures/unsplash_vSJrJgmEzko430.jpg 430w,
+                    ./img/pictures/unsplash_vSJrJgmEzko744.jpg 744w,
+                    ./img/pictures/unsplash_vSJrJgmEzko.jpg" sizes="(max-width:430px) 243px,
+                    (max-width: 744px) 369px" src="./img/pictures/unsplash_vSJrJgmEzko.jpg" alt="">
+                    <div class="gradient-title"></div>
+                    <div class="subscription">
+                        <div class="subscription__content">
+                            <h1>Подписка на её улыбку<span> и цветы</span></h1>
+                            <div class="title__button">
+                                <button class="buttonAssembling open-orderWindow">Собрать свой букет</button>
+                                <button class="buttonCalculation">Рассчитать стоимость</button>
+                            </div>
+                            <p>Подарите себе или близким три месяца свежих цветов с фермы. При необходимости легко настроить адрес и дату доставки для каждого месяца</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="title__special">
+                    <p>Специальное предложение <span><a href="#">здесь</a></span></p>
+                </div>
+                <div class="body-overlay"></div>
+                <div class="order-window">
+                    <img src="./img/icons/x.svg" alt="" id="close-orderWindow">
+                    <h2 class="head-second">Сформируйте Ваш заказ</h2>
+                    <form class="order-window__form" action="#">
+                        <p>Ваше имя</p>
+                        <input name="username" type="text" placeholder="Валерия">
+
+                        <p>Номер телефона</p>
+                        <input name="tel" type="tel" placeholder="+7 999 999 99 99">
+
+                        <p>Почта или телеграм</p>
+                        <input name="email" type="email" placeholder="familiyaimya@pochta.ru">
+
+                        <p>Примечание к заказу:</p>
+                        <label for="">Предпочтительный цвет (можно выбрать несколько)</label>
+                        <div class="order-window__checkbox">
+                            <div>
+                                <label><input type="checkbox"><span>Красный</span></label>
+                                <label><input type="checkbox"><span>Оранжевый</span></label>
+                                <label><input type="checkbox"><span>Желтый</span></label>
+                                <label><input type="checkbox"><span>Желтый</span></label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox"><span>Зеленый</span></label>
+                                <label><input type="checkbox"><span>Голубой</span></label>
+                                <label><input type="checkbox"><span>Синий</span></label>
+                                <label><input type="checkbox"><span>Желтый</span></label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox"><span>Фиолетовый</span></label>
+                                <label><input type="checkbox"><span>Желтый</span></label>
+                                <label><input type="checkbox"><span>Желтый</span></label>
+                                <label><input type="checkbox"><span>Желтый</span></label>
+                            </div> 
+                        </div>
+                        <label for="">Предпочтительный цветок (можно выбрать несколько)</label>
+                        <div class="order-window__checkbox">
+                            <div>
+                                <label><input type="checkbox"><span>Тюльпан</span></label>
+                                <label><input type="checkbox"><span>Пион</span></label>
+                                <label><input type="checkbox"><span>Роза</span></label>
+                                <label><input type="checkbox"><span>Хризантема</span></label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox"><span>Тюльпан</span></label>
+                                <label><input type="checkbox"><span>Пион</span></label>
+                                <label><input type="checkbox"><span>Роза</span></label>
+                                <label><input type="checkbox"><span>Хризантема</span></label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox"><span>Тюльпан</span></label>
+                                <label><input type="checkbox"><span>Пион</span></label>
+                                <label><input type="checkbox"><span>Роза</span></label>
+                                <label><input type="checkbox"><span>Хризантема</span></label>
+                            </div> 
+                        </div>
+                        <label for="">Предпочтительное оформление (можно выбрать несколько)</label>
+                        <div class="order-window__checkbox">
+                            <div>
+                                <label><input type="checkbox"><span>Минималистично</span></label>
+                                <label><input type="checkbox"><span>Ярко</span></label>
+                                <label><input type="checkbox"><span>Темная упаковка</span></label>
+                                <label><input type="checkbox"><span>Без упаковки</span></label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox"><span>Минималистично</span></label>
+                                <label><input type="checkbox"><span>Ярко</span></label>
+                                <label><input type="checkbox"><span>Темная упаковка</span></label>
+                                <label><input type="checkbox"><span>Без упаковки</span></label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox"><span>Минималистично</span></label>
+                                <label><input type="checkbox"><span>Ярко</span></label>
+                                <label><input type="checkbox"><span>Темная упаковка</span></label>
+                                <label><input type="checkbox"><span>Без упаковки</span></label>
+                            </div> 
+                        </div>
+                        <textarea placeholder="Другое примечание"></textarea>
+                        <label id="File-add"><input type="file" accept=".jpg, .png"><span>Прикрепить пример</span></label>
+                        <div class="preview-box"><img src="/img/icons/check-square.svg" alt="">Загружено!<div id="filename"></div></div>
+                        <p>Дата доставки</p>
+                        <label>
+                            <input type="date">
+                        </label>
+                        <p>Время доставки</p>
+                        <label>
+                            <input type="time">
+                        </label>
+                        <p>Адрес доставки</p>
+                        <div class="order-window__place"><input type="text" placeholder="г. Санкт-Петербург, ул. Невский проспект, д. 4, кв. 120"></div>
+                        <p>Получатель</p>
+                        <div class="radio-box">
+                            <label><input type="radio" name="recipient" checked><span>Я - заказчик</span></label>
+                            <label><input type="radio" name="recipient"><span>Получатель - другой человек, но это сюрприз</span></label>
+                            <label><input type="radio" name="recipient"><span>Получатель - другой человек, но нужно позвонить</span></label>
+                        </div>
+                        <p>Имя и номер получателя</p>
+                        <input type="text" placeholder="Валерия +7 999 999 99 99">
+                        <div class="div-submit">
+                            <input type="submit" value="Отправить">
+                            <div>После отправки заявки, с Вами свяжется наш специалист</div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="advantage">
+                <div class="container">
+                    <div class="advantage__inner">
+                        <h2 class="head-second">Почему люди выбирают нас?</h2>
+                        <div class="advantage__itemsInner">
+                            <div class="advantage__item">
+                                <img src="./img/icons/calendar.svg" alt="">
+                                <h3>Мы помним за вас</h3>
+                                <p>Достаточно просто указать важные для Вас даты и периодичность доставки, мы сами напомним и привезем букет</p>
+                            </div>
+                            <div class="advantage__item">
+                                <img src="./img/icons/scales.svg" alt="">
+                                <h3>Стоимость выбираете Вы</h3>
+                                <p>Укажите сумму, которую Вы готовы потратить на один букет, мы все посчитаем с учетом периодичности доставки и оформления</p>
+                            </div>
+                            <div class="advantage__item">
+                                <img src="./img/icons/monets.svg" alt="">
+                                <h3>Экономия</h3>
+                                <p>Оплата ежемесячная, по этому покупка не бьет по карману. Зная спрос, мы высаживаем цветы заранее и не завышаем цены к празднику</p>
+                            </div>
+                            <div class="advantage__item">
+                                <img src="./img/icons/select.svg" alt="">
+                                <h3>Не нужно выбирать букет</h3>
+                                <p>Укажите предпочтения один раз. После каждой доставки расскажите, что понравилось, а что нет, и мы скорректируем следующий букет</p>
+                            </div>
+                        </div>
+                        <button class="button-subscription">Подписаться</button>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio">
+                <div class="container">
+                    <h2 class="head-second">Букеты, созданные нашими профессионалами</h2>
+                    <p>Искусство флористики в каждом букете: мастерски созданные композиции для ярких моментов Вашей жизни или Ваших близких!</p>
+                </div>
+                <div class="slider">
+                    <div class="slider__inner" id="sliderImg">
+                        <div class="slider__img"><img src="./img/pictures/flower1.jpg" alt=""></div>
+                        <div class="slider__img"><img src="./img/pictures/flower2.jpg" alt=""></div>
+                        <div class="slider__img"><img src="./img/pictures/flower3.jpg" alt=""></div>
+                        <div class="slider__img"><img src="./img/pictures/flower4.jpg" alt=""></div>
+                        <div class="slider__img"><img src="./img/pictures/flower5.jpg" alt=""></div>
+                        <div class="slider__img"><img src="./img/pictures/flower2.jpg" alt=""></div>
+                        <div class="slider__img"><img src="./img/pictures/flower1.jpg" alt=""></div>
+                        <div class="slider__img"><img src="./img/pictures/flower4.jpg" alt=""></div> 
+                    </div>
+                    <div class="gradient"></div>
+                </div>
+                <div class="slider-arrow">
+                    <div class="slider-arrow__btn">
+                        <button class="slider-behind"><img src="./img/icons/Vectorleft.svg" alt=""></button>
+                        <button class="slider-next"><img src="./img/icons/Vectorright.svg" alt=""></button>
+                    </div>
+                </div>
+            </section>
+            <section class="instruction">
+                <div class="instruction__wrapper">
+                    <div class="container">
+                        <h2 class="head-second head-second--white">Как работает подписка?</h2>
+                        <div class="instruction__cards">
+                            <div class="instruction__item">
+                                <div class="instruction__head">1. Заполнение анкеты</div>
+                                <div class="instruction__text">Укажите предпочтение по стоимости и оформлению. Вы можете настроить частоту доставки: раз в две недели, ежемесячно, раз в два месяцы, только по праздникам, а так же оставить пожелания по оформлению букета</div>
+                            </div>
+                            <div class="instruction__item">
+                                <div class="instruction__head">2. Формирование индивидуальной подписки</div>
+                                <div class="instruction__text">В вашем личном кабинете формируется подписка по вашим пожеланиям, где вы можете откорректировать даты и предпочтения</div>
+                            </div>
+                            <div class="instruction__item">
+                                <div class="instruction__head">3. Получение букета</div>
+                                <div class="instruction__text">Вы получаете цветы в те числа, которые указали при оформлении подписки, а затем делитесь обратной связью для формирования следующего букета</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="special-offer">
+                <div class="container">
+                    <div class="special-offer__inner">
+                        <div class="offer-img">
+                            <img src="./img/pictures/flower5.jpg" class="offer-img__one" alt="">
+                            <img src="./img/pictures/flower6.jpg" class="offer__img__two" alt="">
+                        </div>
+                        <div class="offer-text">
+                            <h2 class="head-second">Составь свой букет</h2>
+                            <span>/Не нашли, что искали?</span>
+                            <p>Если Вы не хотите оформлять подписку на доставку цветов, можно воспользоваться единоразовой доставкой, указав предпочтения по стоимости, виду цвета, цвету бутона</p>
+                            <button class="open-orderWindow">Составить букет</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="container">
+                    <h2 class="head-second">Что говорят наши клиенты</h2>
+                    <div class="reviews__inner">
+                        <div class="reviews__box" id="reviews-box">
+                            <div class="reviews__item">
+                                <p>Оставляем место под Ваш отзыв, который можно оставить в наших соц. сетях или на сайте</p>
+                                <span>— Клиент</span> 
+                                <div class="reviews__img"><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""></div>
+                            </div>
+                            <div class="reviews__item">
+                                <p>нет</p>
+                                <span>— Клиент</span>
+                                <div class="reviews__img"><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""></div>
+                            </div>
+                            <div class="reviews__item">
+                                <p>да</p>
+                                <span>— Клиент</span>
+                                <div class="reviews__img"><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""></div>
+                            </div>
+                            <div class="reviews__item">
+                                <p>Оставляем место под Ваш отзыв, который можно оставить в наших соц. сетях или на сайте</p>
+                                <span>— Клиент</span>
+                                <div class="reviews__img"><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""></div>
+                            </div>
+                            <div class="reviews__item">
+                                <p>Оставляем место под Ваш отзыв, который можно оставить в наших соц. сетях или на сайте</p>
+                                <span>— Клиент</span>
+                                <div class="reviews__img"><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""></div>
+                            </div>
+                            <div class="reviews__item">
+                                <p>Оставляем место под Ваш отзыв, который можно оставить в наших соц. сетях или на сайте</p>
+                                <span>— Клиент</span>
+                                <div class="reviews__img"><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""><img src="./img/icons/Star.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                
+                <div class="slider-arrow">
+                    <div class="slider-arrow__btn">
+                        <button class="slider-behind" id="reviews-behind"><img src="./img/icons/Vectorleft.svg" alt=""></button>
+                        <button class="slider-next" id="reviews-next"><img src="./img/icons/Vectorright.svg" alt=""></button>
+                    </div>
+                </div>
+            </section>
+            <section class="help">
+                <div class="container">
+                    <h2 class="head-second">Нужна помощь?</h2>
+                    <div class="help__questions">
+                        <div class="help__question-inner">
+                            <span>Как происходит оплата?</span>
+                            <button id="open-block1" class="open-block"><img src="./img/icons/Vectordown.svg" alt=""></button>
+                            <div class="help__answer" style="display: none;">Ваша подписка на цветы будет постоянной. Таким образом, оплата в размере 25 фунтов стерлингов будет автоматически сниматься с выбранного вами счета раз в две недели, за 3 дня до родов. Вы можете быстро и легко пропустить, приостановить или отменить доставку цветов со своей учетной записи в любое время.</div>
+                        </div>
+                        <div class="help__question-inner">
+                            <span>Красивые букеты, когда они вам нужны?</span>
+                            <button id="open-block2" class="open-block"><img src="./img/icons/Vectordown.svg" alt=""></button>
+                            <div class="help__answer" style="display: none;">Ваша подписка на цветы будет постоянной. Таким образом, оплата в размере 25 фунтов стерлингов будет автоматически сниматься с выбранного вами счета раз в две недели, за 3 дня до родов. Вы можете быстро и легко пропустить, приостановить или отменить доставку цветов со своей учетной записи в любое время.</div>
+                        </div>
+                        <div class="help__question-inner">
+                            <span>Могу ли я собрать букет на определенную стоимость?</span>
+                            <button id="open-block3" class="open-block"><img src="./img/icons/Vectordown.svg" alt=""></button>
+                            <div class="help__answer" style="display: none;">Ваша подписка на цветы будет постоянной. Таким образом, оплата в размере 25 фунтов стерлингов будет автоматически сниматься с выбранного вами счета раз в две недели, за 3 дня до родов. Вы можете быстро и легко пропустить, приостановить или отменить доставку цветов со своей учетной записи в любое время.</div>
+                        </div>
+                        <div class="help__question-inner">
+                            <span>Могу ли я выбрать предпочтения?</span>
+                            <button id="open-block4" class="open-block"><img src="./img/icons/Vectordown.svg" alt=""></button>
+                            <div class="help__answer" style="display: none;">Ваша подписка на цветы будет постоянной. Таким образом, оплата в размере 25 фунтов стерлингов будет автоматически сниматься с выбранного вами счета раз в две недели, за 3 дня до родов. Вы можете быстро и легко пропустить, приостановить или отменить доставку цветов со своей учетной записи в любое время.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <div class="footer__logoImg">
+                            <img src="./img/icons/logofooter.svg" alt="#">
+                            <p>Подписка на её улыбку!</p>
+                        </div>
+                        <div class="footer__logoSign">
+                            <p>2024, Clover</p>
+                            <p>Цветы, букеты, подписка на цветы, эксклюзивная  флористика</p>
+                        </div>
+                    </div>
+                    <div class="footer__menu" id="menu-nav">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">Преимущества</a></li>
+                                <li><a href="#">Наши работы</a></li>
+                                <li><a href="#">Как работает подписка</a></li>
+                                <li><a href="#" class="open-orderWindow">Соберите свой букет</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Часто задаваемые вопросы</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Условия доставки</a></li>
+                                <li><a href="#">Условия оплаты</a></li>
+                                <li><a href="#">Смена даты доставки</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li><a href="#">Личный кабинет</a></li>
+                                <li><a href="#">Мои заказы</a></li>
+                                <li><a href="#">Мои предпочтения</a></li>
+                                <li><a href="#">Способы оплаты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="contacts">
+                        <div class="conacts__link">
+                            <a href="#">clover@gmail.com</a>
+                            <a href="#">+7 999 999 99 99</a>
+                            <a href="#">+7 999 999 99 99</a>
+                        </div>
+                        <div class="contacts__messenger">
+                            <a href=""><img src="./img/icons/tgfooter.svg" alt=""></a>
+                            <a href=""><img src="./img/icons/instfooter.svg" alt=""></a>
+                        </div>
+                        <div class="contacts__documents">
+                            <a href="#">Соглашение об обработке данных</a>
+                            <a href="#">Договор оферты</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+</body>
+</html>
